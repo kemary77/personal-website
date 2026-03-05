@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Keith</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #0d0d0d;
+      --surface: #141414;
+      --border: #222;
+      --text: #e8e8e8;
+      --muted: #666;
+      --accent: #c8a96e;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      padding: 4rem 2rem;
+    }
+
+    main {
+      max-width: 560px;
+      margin: 0 auto;
+    }
+
+    .back {
+      display: inline-block;
+      font-family: 'Courier New', monospace;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      margin-bottom: 3rem;
+      transition: color 0.2s;
+    }
+
+    .back:hover {
+      color: var(--text);
+    }
+
+    .back::before {
+      content: '← ';
+    }
+
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      font-weight: normal;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-family: 'Courier New', monospace;
+      font-size: 0.8rem;
+      color: var(--accent);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+
+    .divider {
+      width: 2rem;
+      height: 1px;
+      background: var(--border);
+      margin-bottom: 3rem;
+    }
+
+    .project-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .project {
+      border-left: 1px solid var(--border);
+      padding-left: 1.25rem;
+      transition: border-color 0.2s;
+    }
+
+    .project:hover {
+      border-color: var(--accent);
+    }
+
+    .project-name {
+      font-size: 1rem;
+      font-weight: normal;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-name a {
+      color: var(--text);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .project-name a:hover {
+      color: var(--accent);
+    }
+
+    .project-meta {
+      font-family: 'Courier New', monospace;
+      font-size: 0.7rem;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-desc {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #b0b0b0;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <a href="index.html" class="back">Home</a>
+    <h1>Projects</h1>
+    <p class="subtitle">Companies &amp; Investments</p>
+    <div class="divider"></div>
+
+    <div class="project-list">
+
+      <div class="project">
+        <h2 class="project-name"><a href="#">Company One</a></h2>
+        <p class="project-meta">Founder &mdash; 2021&ndash;Present</p>
+        <p class="project-desc">Short description of what this company does and what your role was. One or two sentences.</p>
+      </div>
+
+      <div class="project">
+        <h2 class="project-name"><a href="#">Company Two</a></h2>
+        <p class="project-meta">Investor &mdash; 2022</p>
+        <p class="project-desc">Short description of what this company does and what your role was. One or two sentences.</p>
+      </div>
+
+      <div class="project">
+        <h2 class="project-name"><a href="#">Company Three</a></h2>
+        <p class="project-meta">Operator &mdash; 2019&ndash;2021</p>
+        <p class="project-desc">Short description of what this company does and what your role was. One or two sentences.</p>
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
